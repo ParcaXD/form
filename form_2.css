@@ -1,0 +1,586 @@
+       /* CSS general (sin cambios) */
+
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 20px;
+           background-color: #f2f2f2;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background-image: linear-gradient(to bottom, #3264e1, #e6e6e6);
+       }
+
+       /* Estilos para el contenedor del formulario */
+       .form-container {
+           max-width: 1100px;
+           margin: -8px auto;
+           padding: 30px;
+           background-color: rgba(255, 255, 255, 0.7);
+           /* Utilizamos rgba para hacer el fondo semi-transparente */
+           border-radius: 8px;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           position: relative;
+       }
+
+
+
+       
+
+       .form-row {
+           display: flex;
+           align-items: center;
+           margin-bottom: 20px;
+       }
+
+       .form-row label {
+           width: 200px;
+           text-align: right;
+           margin-right: 20px;
+           font-weight: bold;
+       }
+
+
+       .form-row input[type="text"],
+       .form-row input[type="email"],
+       .form-row input[type="date"],
+       .form-row input[type="checkbox"] {
+           padding: 10px;
+           border: 5px solid #ccc;
+           border-radius: 25px;
+           font-size: 14px;
+           width: 300px;
+           box-sizing: border-box;
+           transition: border-color 0.3s ease-in-out;
+       }
+
+       
+
+       .form-row #ci[type="text"] {
+           padding: 10px;
+           border: 5px solid #ccc;
+           border-radius: 25px;
+           font-size: 14px;
+           width: 240px;
+           box-sizing: border-box;
+           transition: border-color 0.3s ease-in-out;
+       }
+
+       .form-row #ci[type="text"]:focus {
+           border-color: #5534d6;
+           outline: none;
+       }
+
+
+
+
+       .form-row input[type="checkbox"]+label {
+           margin-left: 10px;
+       }
+
+
+
+       .form-row input[type="text"]:focus,
+       .form-row input[type="email"]:focus,
+       .form-row input[type="date"]:focus,
+       .form-row input[type="checkbox"]:focus {
+           border-color: #5534d6;
+           outline: none;
+       }
+
+       h2 {
+           margin-top: 0;
+           margin-bottom: 20px;
+       }
+
+
+
+       .agreement-text {
+           margin: 0;
+           font-size: 16px;
+           line-height: 1.6;
+       }
+
+
+
+       /* Estilos para el contenedor del botón */
+       .button-container {
+           display: flex;
+           justify-content: center;
+           margin-top: 20px;
+           /* Puedes ajustar este margen según tus necesidades */
+       }
+
+       /* Estilos para el botón de envío */
+       #register-button {
+           padding: 12px 24px;
+           background-color: #5534d6;
+           /* Color de fondo llamativo */
+           border: none;
+           color: #fff;
+           /* Color del texto */
+           font-size: 16px;
+           border-radius: 4px;
+           cursor: pointer;
+           transition: background-color 0.3s ease-in-out, transform 0.1s;
+           /* Añadimos transición también al transform */
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+       }
+
+       #register-button:hover {
+           background-color: #4b78ff;
+           /* Color de fondo al pasar el cursor por encima */
+       }
+
+       #register-button:focus {
+           outline: none;
+       }
+
+       #register-button:active {
+           background-color: #d6481a;
+           /* Color de fondo al hacer clic */
+           transform: scale(0.95);
+           /* Efecto de escala al hacer clic */
+       }
+
+
+
+       /* Estilos para el contenedor de la lista de opciones */
+       .options-container {
+           display: flex;
+           justify-content: center;
+       }
+
+       /* Estilos para la lista de opciones */
+       .options-list {
+           display: flex;
+           list-style: none;
+           padding: 0;
+           margin: 0;
+       }
+
+       /* Estilos para los elementos de la lista */
+       .options-list li {
+           display: flex;
+           align-items: center;
+           margin-right: 20px;
+       }
+
+       /* Estilos para los checkbox */
+       .options-list input[type="checkbox"] {
+           margin-right: 8px;
+           cursor: pointer;
+       }
+
+       /* Estilos para las etiquetas de los checkbox */
+       .options-list label {
+           cursor: pointer;
+       }
+
+
+       /* Estilos para el contenedor del título */
+       .form-title {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+       /* Estilos para el título */
+       .form-title h1 {
+           font-size: 32px;
+           color: #1e2a78;
+           /* Color del título (azul oscuro) */
+           text-transform: uppercase;
+           border-bottom: 2px solid #1e2a78;
+           /* Línea inferior del título */
+           padding-bottom: 10px;
+       }
+
+
+       /* Estilos para los contenedores de columna */
+       .form-column {
+           display: inline-block;
+           align-items: center;
+           margin-bottom: 15px;
+           /* Espacio entre columnas */
+       }
+
+       /* Estilos para las etiquetas de checkbox */
+       .form-column label {
+           margin-left: 10px;
+           /* Espacio entre checkbox y texto */
+       }
+
+       /* Estilos adicionales para resaltar los checkboxes */
+       .form-column input[type="checkbox"] {
+           appearance: none;
+           /* Remueve el estilo por defecto de los checkboxes */
+           width: 20px;
+           /* Tamaño personalizado del checkbox en diseño no responsivo */
+           height: 20px;
+           border: 2px solid #342ed6;
+           /* Borde del checkbox */
+           border-radius: 4px;
+           /* Borde redondeado */
+           cursor: pointer;
+           margin-left: 5px;
+           /* Ajusta este valor según tus preferencias */
+           margin-right: 5px;
+       }
+
+       .form-column input[type="checkbox"]:checked {
+           background-color: #2f6db5;
+           /* Cambia el fondo al seleccionar el checkbox */
+       }
+
+       /* Estilos para las etiquetas de checkbox en pantallas responsivas */
+       @media screen and (max-width: 768px) {
+           .form-row {
+               flex-wrap: wrap;
+               /* Permitimos que los elementos se envuelvan en pantallas pequeñas */
+           }
+
+           .form-column {
+               display: block;
+               /* Cambiamos a bloque para que ocupen toda la anchura */
+               margin-bottom: 15px;
+               /* Espacio entre columnas */
+               margin-right: 20px;
+               /* Ajusta este valor según tus preferencias */
+               width: 100%;
+               /* Ocupamos todo el ancho del contenedor */
+           }
+
+           .form-column label {
+               display: inline-block;
+               /* Mostramos el label como un bloque para aplicarle el ancho fijo */
+               width: auto;
+               /* Ancho automático para que no se vean separados en diseño responsivo */
+               margin-left: 10px;
+               /* Espacio entre checkbox y texto */
+           }
+
+           .form-column input[type="checkbox"] {
+               width: 16px !important;
+               /* Tamaño personalizado del checkbox reducido en pantallas responsivas */
+               height: 16px !important;
+               border: 2px solid #342ed6;
+               /* Borde del checkbox */
+               border-radius: 4px;
+               /* Borde redondeado */
+               cursor: pointer;
+               margin-left: 5px;
+               /* Ajusta este valor según tus preferencias */
+               margin-right: 5px;
+           }
+       }
+
+
+       .file-input-container {
+           position: relative;
+           overflow: hidden;
+       }
+
+       .file-input {
+           position: absolute;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           opacity: 0;
+           cursor: pointer;
+       }
+
+       .file-label {
+           display: inline-block;
+           padding: 10px 20px;
+           background-color: #342ed6;
+           color: #fff;
+           font-size: 16px;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+
+       .file-label:hover {
+           background-color: #45a049;
+       }
+
+       .file-label:active {
+           background-color: #3e8942;
+       }
+
+
+
+       .file-name-label {
+           display: inline-block;
+           margin-left: 10px;
+           font-size: 14px;
+           color: #555;
+       }
+
+
+
+       .form-header {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           background-color: #1f2e4b;
+           padding: 10px 20px;
+       }
+
+       .form-header h1 {
+           font-size: 24px;
+           font-weight: bold;
+           color: #ffffff;
+           margin: 0;
+       }
+
+       .logo-img {
+           width: 115px;
+           height: 80px;
+           position: absolute;
+           top: 15px;
+           /* Puedes ajustar la posición vertical según desees */
+           right: 100px;
+           /* Puedes ajustar la posición horizontal según desees */
+
+           /* Nuevos estilos para hacerlo responsivo */
+           @media screen and (max-width: 768px) {
+               position: static;
+               display: block;
+               margin: 0 auto 10px;
+               top: 0;
+               right: 0;
+               width: 30%;
+           }
+       }
+
+
+
+       .form-row select {
+           appearance: none;
+           padding: 10px;
+           border: 5px solid #ccc;
+           border-radius: 25px;
+           font-size: 14px;
+           width: 27%;
+           box-sizing: border-box;
+           background-color: #fff;
+           background-image: linear-gradient(45deg, #ccc 50%, transparent 50%),
+               linear-gradient(135deg, transparent 50%, #ccc 50%),
+               linear-gradient(to right, #ccc, #ccc);
+           background-position: calc(100% - 20px) calc(1em + 2px),
+               calc(100% - 15px) calc(1em + 2px),
+               calc(100% - 2.5em) 0.5em;
+           background-size: 5px 5px, 5px 5px, 1px 1.5em;
+           background-repeat: no-repeat;
+       }
+
+       .form-row select:focus {
+           border-color: #4CAF50;
+           outline: none;
+       }
+
+
+
+
+       .form-row #CIL {
+           appearance: none;
+           padding: 10px;
+           border: 5px solid #ccc;
+           border-radius: 25px;
+           font-size: 14px;
+           width: 5%;
+           box-sizing: border-box;
+           background-color: #fff;
+           background-image: linear-gradient(45deg, #ccc 50%, transparent 50%),
+               linear-gradient(135deg, transparent 50%, #ccc 50%),
+               linear-gradient(to right, #ccc, #ccc);
+           background-position: calc(100% - 20px) calc(1em + 2px),
+               calc(100% - 15px) calc(1em + 2px),
+               calc(100% - 2.5em) 0.5em;
+           background-size: 5px 5px, 5px 5px, 1px 1.5em;
+           background-repeat: no-repeat;
+       }
+
+       .form-row #CIL:focus {
+           border-color: #4CAF50;
+           outline: none;
+       }
+
+       /*Estilo responsivo*/
+
+       /* Estilos para hacer el formulario responsive */
+
+       @media screen and (max-width: 768px) {
+           .form-row {
+               flex-direction: column;
+           }
+
+           .form-row label {
+               width: 100%;
+               margin-bottom: 6px;
+               text-align: left;
+               font-size: 14px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+           }
+
+           .form-row input[type="text"],
+           .form-row input[type="email"],
+           .form-row input[type="date"],
+           .form-row input[type="checkbox"],
+           .form-row select {
+               width: 100%;
+               font-size: 14px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+               padding: 10px;
+               /* Ajustar el padding según tus preferencias */
+           }
+
+           .form-column {
+               margin-bottom: 15px;
+               /* Espacio entre columnas */
+               margin-right: 0;
+           }
+
+           .form-title h1 {
+               font-size: 24px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+           }
+
+           /* Ajustes para el botón de envío */
+           #register-button {
+               padding: 12px 24px;
+               font-size: 14px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+           }
+
+           /* Estilos para la lista de opciones en pantallas pequeñas */
+           .options-list {
+               flex-wrap: wrap;
+               /* Para que las opciones se muestren en varias líneas */
+           }
+
+           .options-list li {
+               width: 50%;
+               /* Para que cada opción ocupe la mitad del ancho en pantallas pequeñas */
+           }
+       }
+
+       /* Ajustes adicionales para pantallas muy pequeñas */
+       @media screen and (max-width: 480px) {
+           .form-title h1 {
+               font-size: 20px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+           }
+
+           .form-row label {
+               font-size: 12px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+           }
+
+           .form-row input[type="text"],
+           .form-row input[type="email"],
+           .form-row input[type="date"],
+           .form-row input[type="checkbox"],
+           .form-row select {
+               font-size: 10px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+           }
+
+           .file-label {
+               font-size: 10px;
+               /* Ajustar el tamaño de fuente según tus preferencias */
+           }
+       }
+
+       /* Ajustes adicionales para pantallas muy pequeñas */
+       @media screen and (max-width: 360px) {
+
+           .form-row input[type="text"],
+           .form-row input[type="email"],
+           .form-row input[type="date"],
+           .form-row input[type="checkbox"],
+           .form-row select {
+               padding: 8px;
+               /* Ajustar el padding según tus preferencias */
+           }
+       }
+
+       .progress-bar-container {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           background-color: #f2f2f2;
+           z-index: 9999;
+           /* Asegura que la barra de progreso esté por encima del contenido del formulario */
+       }
+
+
+       .progress {
+           height: 8px;
+           /* Ajusta la altura según prefieras */
+           background-color: #342ed6;
+           /* Color de la barra de progreso */
+           width: 0;
+           /* Comenzará con ancho 0 y se actualizará mediante JavaScript */
+           transition: width 0.3s ease-in-out;
+           /* Añade una transición suave al actualizar el ancho */
+       }
+
+
+
+       /* CSS general (sin cambios) */
+       /* ... */
+
+       /* Estilos para hacer el formulario responsive */
+       @media screen and (max-width: 768px) {
+           .form-row {
+               flex-direction: column;
+           }
+
+           .form-row label {
+               text-align: left;
+               font-size: 14px;
+               margin-bottom: 8px;
+           }
+
+           .form-row input[type="text"],
+           .form-row input[type="email"],
+           .form-row input[type="date"],
+           .form-row input[type="radio"],
+           .form-row input[type="checkbox"],
+           .form-row select {
+               width: 100%;
+               font-size: 14px;
+               padding: 8px;
+           }
+
+           .options-container {
+               flex-direction: column;
+           }
+
+           .options-list li {
+               width: 100%;
+           }
+
+           .button-container {
+               margin-top: 20px;
+           }
+
+           #register-button {
+               padding: 12px 0;
+               font-size: 16px;
+           }
+
+           .logo-img {
+               width: 30%;
+           }
+       }
+
+
+
+
+
+   

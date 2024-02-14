@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Éxito de inscripción</title>
+  <link rel="stylesheet" href="inscrito.css"> <!-- Tu archivo CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="message-container">
+    <img src="imagenes/descarga_(1)-transformed.png" alt="Logo Fundación Idea" class="logo flotar">
+    <div class="success-message">
+      <h1>¡Inscripción exitosa!</h1>
+      <p>Bienvenido a Fundación Idea.</p>
+      <p>Gracias por inscribirte con nosotros.</p>
+      <button onclick="cerrarMensaje()">Cerrar</button>
+    </div>
+  </div>
+  
+  <script>
+    function cerrarMensaje() {
+      var mensaje = document.querySelector('.message-container');
+      mensaje.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

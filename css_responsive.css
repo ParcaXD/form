@@ -1,0 +1,79 @@
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px; /* Reduzca el tamaño del título para pantallas más pequeñas */
+  }
+
+  .logo-img {
+    top: 35spx; /* Ajusta la posición superior para pantallas más pequeñas */
+    right: 0px; /* Ajusta la posición derecha para pantallas más pequeñas */
+    width: 150px; /* Reduzca el ancho del logo para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 800px) {
+  .form-container {
+    max-width: 100%; /* Ajustar al 100% del ancho de la pantalla */
+    margin: -8px -20px; /* Agregar un margen izquierdo y derecho de 10px */
+    box-shadow: none; /* Eliminar la sombra en dispositivos más pequeños */
+    opacity: 80%; /* Restaurar la opacidad al 100% */
+  }
+}
+
+/* Ajustar campos de entrada en pantallas más pequeñas */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    width: 100%;
+  }
+}
+
+/* Alinear los elementos en una sola fila en dispositivos más pequeños */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column; /* Cambiar la dirección de flex a columna */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select {
+    width: 100%; /* Ancho al 100% para ocupar toda la pantalla */
+    margin-left: 3%;
+  }
+}
+
+/* Estilo para hacer el label responsivo en dispositivos más pequeños */
+@media (max-width: 768px) {
+  label#FN {
+    width: 100%; /* Ancho ajustado para dispositivos más pequeños (puedes ajustar el valor) */
+    margin-left: 5%;
+  }
+}
+@media (max-width: 768px) {
+  #CIL {
+    width: 30%; /* Ancho ajustado para dispositivos más pequeños (puedes ajustar el valor) */
+    margin-left: 3%;
+  }
+}
+
+/* Alinear opciones hacia la izquierda en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .form-column {
+    text-align: left; /* Alinear las opciones hacia la izquierda */
+  }
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .file-input-container {
+    width: 100%; /* Ajustar al 100% del ancho de la pantalla */
+  }
+
+  .file-input,
+  .file-label {
+    width: 100%; /* Ajustar al 100% del ancho del contenedor */
+  }
+}

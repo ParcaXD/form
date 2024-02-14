@@ -1,0 +1,68 @@
+/* Estilos para el formulario de impresión */
+.print-form {
+    padding: 20px;
+    border: 0px solid black;
+    margin: -28px;
+    font-family: Arial, sans-serif;
+}
+
+.print-form h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.print-form table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.print-form th,
+.print-form td {
+    padding: 5px;
+    border: 0px solid black;
+}
+
+/* Estilos para el encabezado */
+/*.header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}*/
+
+/* Estilos para el separador de usuarios */
+.user-separator {
+    border-top: 1px solid #000;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para las páginas */
+.page {
+    page-break-after: always;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*.logo{
+    width: 100px;
+    float: right;
+    margin-bottom: 60px;
+}*/
+
+
+th {
+    text-align: left; 
+    border: 1px solid black; 
+    padding: 10px; 
+  }
+td {
+    text-align: left; 
+    border: 1px solid black; 
+    padding: 10px; 
+}
+

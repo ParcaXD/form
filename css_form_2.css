@@ -1,0 +1,221 @@
+/* Estilos generales */
+body {
+  background-image: url("http://localhost/formulario_2/imagenes/pexels-pixabay-268415.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Opcional, para fijar el fondo */
+  font-family: "Tilt Neon", sans-serif;
+}
+
+.form-container {
+  background-color: #fff;
+  max-width: 800px; /* Ensanchado el formulario */
+  margin: -8px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 80%;
+}
+
+/* Estilos del encabezado */
+.form-title {
+  text-align: center;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+h4 {
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* Estilo para el logo dentro del formulario en la esquina superior derecha */
+.logo-img {
+  position: relative;
+  top: 30px; /* Ajusta la posición superior según tus preferencias */
+  right: -90px; /* Ajusta la posición derecha según tus preferencias */
+  width: 150px; /* Ajusta el ancho según tus preferencias */
+}
+
+/* Estilos de los campos de entrada */
+.form-row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between; /* Dividir en dos filas */
+  position: relative; /* Necesario para el efecto de transición */
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+#CIL {
+  width: 12%; /* Ensanchado el campo de entrada */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+  transition: all 0.3s; /* Agregar una transición */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 48%; /* Ensanchado el campo de entrada */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+  transition: all 0.3s; /* Agregar una transición */
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* Estilos para ocultar el placeholder al seleccionar el input con un efecto de desplazamiento */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+select::placeholder {
+  transition: transform 0.3s, opacity 0.3s; /* Agregar una transición */
+  transform-origin: left;
+  font-weight: bold; /* Agregar negrita al placeholder */
+  font-family: "Tilt Neon", sans-serif;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+select:focus::placeholder {
+  opacity: 0;
+  transform: translateX(-20px); /* Mover el placeholder hacia la izquierda */
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* Estilos de los botones */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos base del botón */
+#register-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilo al pasar el cursor sobre el botón */
+#register-button:hover {
+  background-color: #3498db; /* Mantenemos el mismo color */
+  box-shadow: 0px 0px 20px 5px #3498db; /* Sombra para el efecto fosforescente */
+}
+
+/* Texto con sombra para resaltar */
+#register-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sombra para el texto */
+#register-button:hover span {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Sombra para el texto */
+}
+
+/* Estilos de los archivos adjuntos */
+.file-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.file-name-label {
+  margin-left: 10px;
+}
+
+/* Estilos de las opciones de trabajo */
+.form-column {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Estilos de los acuerdos de compromiso */
+.agreement-text {
+  font-size: 14px;
+}
+
+/* Otros estilos personalizados según tus preferencias */
+
+/* Estilo del campo de fecha */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f9f9f9; /* Fondo ligeramente diferente */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* Estilo del icono de calendario (puedes personalizar el icono) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* Estilo para el label "Fecha de nacimiento" */
+label#FN {
+  width: 10%;
+  font-weight: bold; /* Texto en negrita */
+  color: black; /* Color azul (puedes cambiarlo al color que prefieras) */
+  font-size: 18px; /* Tamaño de fuente (ajusta según tus preferencias) */
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* Estilo para la lista de opciones alineadas horizontalmente */
+ul.options-list-horizontal {
+  list-style-type: none; /* Quita los marcadores de lista */
+  display: flex; /* Hace que los elementos se alineen horizontalmente */
+  margin: 0; /* Quita el margen predeterminado de la lista */
+  padding: 0; /* Quita el relleno predeterminado de la lista */
+  font-family: "Tilt Neon", sans-serif;
+}
+
+/* Estilo para cada elemento de la lista */
+ul.options-list-horizontal li {
+  margin-right: 20px; /* Espacio entre elementos (ajusta según tus preferencias) */
+}
+
+/* Estilo para el icono del título */
+.icono-titulo {
+  width: 50px; /* Ajusta el ancho según tus preferencias */
+  margin-left: 10px; /* Ajusta el margen izquierdo según tus preferencias */
+  vertical-align: middle; /* Alinea verticalmente el icono con el texto */
+}
